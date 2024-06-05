@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en-US" >
+<head>
+<link rel="icon" href="/favicon.png" />
+<link rel="apple-touch-icon" href="/favicon.png" />
+<link rel="alternate"  type="application/rss+xml" title="RSS" href="/rss.php" >
+<link rel="canonical" href="https://www.stealthpay.com/">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+ 
+
+
+<meta name="author" content="GENERAL_AUTHOR/2" >
+<title>StealthPay</title>
+<meta name="description" content="description_website" >
+
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; CHARSET=UTF-8" >
+<meta name="keywords" content="GENERAL_KEYWORDS" >
+<meta name="description" content="GENERAL_DESCRIPTION">
+<meta name="robots" content="robot">
+
+<meta property="og:url"                content="https://www.stealthpay.com?sitedoc=main" />
+<meta property="og:type"               content="article" />
+<meta property="og:title"              content="StealthPay" />
+<meta property="og:description"        content="GENERAL_DESCRIPTION" />
+<meta property="og:image"              content="https://www.stealthpay.com/themes/standard/logo/logo256a.png" />
+
+<link rel="stylesheet" type="text/css" href="css/style.css?v=1620468856">
+
+
+<link rel="stylesheet" type="text/css" href="css/css?family=Ubuntu:300,400,500,700,900">
+<link rel="stylesheet" type="text/css" href="css/icon?family=Material+Icons">
+<script src="js/allscript.js?v=1620468856"></script>
+<script>
+var index_php="index.php";
+var FullWebLink="https://www.stealthpay.com/";
+var WebLink="/";
+var WebLinkImgTheme="/index.php?phpParam=img&imn=themes/standard/";
+var WebLinkImg="/index.php?phpParam=img&imn=";
+var WebLinkTheme="/themes/standard/";
+var LocThemeDir="themes/standard/";
+
+var TransFilterAllText="All";
+var TransFilterDateFromText="From";
+var TransFilterDateToText="To";
+var TransFilterCalendarText="Calendar";
+var EditPlaneFileUploadWinName="Files Upload";
+var EditPlaneImgUploadWinName="Pictures Upload";
+var CalendarWinName="Calendar";
+</script>
+<script>var USERID='',SIDNAME='sid',SID='82b1b0e18fd294152ebb0045ad98fb21';</script>
+<link rel="stylesheet" type="text/css" href="css/css?family=Roboto:100,300,400,500,700,900,300italic">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+</head><body style='overflow:auto;'>
+<div id='WindowInfoBar'></div><div id='WindowsJCSystem'></div>
+<script>
+var deflink="&EM=&sitedoc=main&defmenuid=tm101";
+InitDragDrop();
+
+function IDChecked_input(tab,val,nm,retn,ur)
+{
+    if(!retn)retn=nm;
+	var obj=document.getElementById(nm+'_info');
+	if(obj.tagName.toLowerCase()=='input')obj.value='Finding...';
+    else document.getElementById(nm+'_info').innerHTML='Finding...';
+    SendQuerySrv(nm+'_info','/index.php?phpParam=getjoinfield&'+ur+'&tabnm='+tab+'&gc='+tab+'&gcuid='+val+'&fieldname='+nm+'&collumn='+retn+'&token=66609eefe98a1');
+}
+	</script>
+<div id='MainDocument' >
+<script src="js/mfes.js"></script>
+<script >var mainHtmlLines=new jc_divline();</script>
+
+<div class="page">
+ <header class="rd-navbar-wrap">
+      <nav data-layout="rd-navbar-fixed" data-focus-on-hover="false" data-sm-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-lg-stick-up="true" data-md-stick-up-offset="157px"
+        data-lg-stick-up-offset="157px" class="rd-navbar rd-navbar-default">
+        <div class="rd-navbar-inner">
+          <div class="rd-navbar-top-panel-overlay">
+            <div class="rd-navbar-top-panel">
+              <div class="block-left">
+                <div class="small">
+<div class="XSTPricePanel">
+<span>Stealth Price:</span>
+<i class="XSTUSDRate">1</i>
+<span>USD</span>
+</div>
+
+<script >
+setInterval(function(){
+
+  dataSender("/?phpParam=elements&evc=XSTPricePanel&type=json","",function(dat){
+      var els=document.querySelectorAll(".XSTUSDRate");
+     var jd=JSON.parse(dat);
+      for(var i=0;i<els.length;i++){
+           els[i].innerHTML=jd.rate;
+        }
+     },
+      "","JSON");
+},5*60*1000);
+</script>
+</div>
+              </div>
+
+              <ul class="inline-list inline-list-gray-dark">
+		<li class="langPan">
+                    <div class="chooseLang"><a  href="/en?"  target="_parent">English</a><a  href="/it?"  target="_parent">Italiano</a></div>
+<script >
+function changeLangCallback()
+{
+   window.location.href=window.location.href.split("#")[0];
+   CloseWaitingEx();
+
+}
+
+function changeLanguage(langId)
+{
+   OpenWaitingEx();
+   var url=window.location.href;
+   if(url.indexOf("?")>0)url+="&";
+   else url+="?";
+   url="/?";
+//   SendQuery("",url+"lg="+langId, changeLangCallback);
+   dataSender("/?phpParam=elements&evc=chooseLang","lg="+langId,changeLangCallback);
+}
+</script>
+
+		</li>
+                <li>
+                    
+<div class="panelLogin" >
+<div id="panelLogin" class="panelLogin" onkeydown="if(event.keyCode==13)LoginPanel()">
+      <input type="hidden" name="frmlogin2uid" value="0">
+       <input type="hidden" name="frmlogin2_fnc" value="cp">
+       <input type="hidden" name="frmlogin2_req" value="edit">
+<div class="panelLine">
+<input type="email" name="t_user" value="" placeholder="E-mail">
+<input type="password" name="m_pass" value="" placeholder="Password">
+<button onclick="LoginPanel()">Login</button>
+</div>
+<div class="panelLine">
+<a href="/MyAccount">Register</a>
+<a href="/PasswordRecovery">Forgot password?</a>
+</div>
+
+      <div id="loginInfoBox" class="messageBar"></div>
+       <div id="loginInfoBoxHidden" style="display:none"></div>
+       <script >
+
+              function LoginPanelCallBack(dat)
+              {
+                 CloseWaitingEx();
+                try{
+                 var obj=JSON.parse(dat);
+                 var msg=((obj.desc || (obj.desc!=undefined))?decodeURIComponent(obj.desc):obj.status)+": "+obj.code;
+                   if(obj.status.substring(0,2).toLowerCase()=="ok"){
+                       setMessage(msg,"messageBar","style.color=\"#5d5\";");
+                       window.location="/MyAccount";
+                    }else {
+                       setMessage(msg,"messageBar","style.color=\"#d55\";");
+                    }
+             
+                }catch(e)
+                {
+                  setMessage("error: "+e,"messageBar","style.color=\"#d55\";");
+                }
+
+       }
+
+       function LoginPanel()
+       {
+               OpenWaitingEx();
+              var postParams=serialize("panelLogin");
+              console.log(postParams);
+              document.cookie="";
+              link=FullWebLink+"?phpParam=elements&evc=LoginByMail&"+SIDNAME+"="+SID+"&scriptinitial=y&type=json";
+	      dataSender(link,postParams,LoginPanelCallBack,[SIDNAME]);
+       }
+
+</script>
+
+</div>
+</div>
+
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="rd-navbar-panel">
+            <button data-rd-navbar-toggle=".rd-navbar-nav-wrap" class="rd-navbar-toggle">
+              <span></span>
+            </button>
+            <div class="brand rd-navbar-brand">
+              <a href="/">
+                <img class="img-responsive" src=imgs/logo.png alt="" height="37">
+              </a>
+            </div>
+
+<div class="rd-navbar-nav-wrap toggle-original-elements  mobile-display">
+    <div class='rd-navbar-nav'>
+<ul>
+<li   data-seccheck='1'  data-secusercheck='' >
+
+	             <a  href='https://www.stealthpay.com/aboutus' 
+					 >About Us</a>
+</li>
+<li   data-seccheck='1'  data-secusercheck='' >
+
+	             <a  href='https://www.stealthpay.com/buyxst' 
+					 >Buy Stealth</a>
+</li>
+<li   data-seccheck='1'  data-secusercheck='' >
+
+	             <a  href='https://www.stealthpay.com/sellxst' 
+					 >Sell Stealth</a>
+</li>
+<li   data-seccheck='1'  data-secusercheck='' >
+
+	             <a  href='https://www.stealthpay.com/sendmoney' 
+					 >Send Money</a>
+</li>
+<li   data-seccheck='1'  data-secusercheck='' >
+
+	             <a  href='https://www.stealthpay.com/requestmoney' 
+					 >Request Money</a>
+</li>
+<li   data-seccheck='1'  data-secusercheck='' >
+
+	             <a  href='https://www.stealthpay.com/Contact' 
+					 >Contact</a>
+</li>
+</ul>
+</div>
+
+          </div>
+
+            <div class="rd-navbar-aside">
+
+<H2>Move Money Anonymously</H2>
+<!--              <ul class="inline-list group">
+                <li>
+                  <div class="unit unit-horizontal unit-middle unit-spacing-sm">
+                    <div class="unit-left">
+                      <img src=imgs/icon-clock-32x33.png alt="" width="33" height="32">
+                    </div>
+                    <div class="unit-body">
+                      <span class="text-bold text-gray-base reveal-block">Working time: 24/7</span>
+                      <span>Active</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="unit unit-horizontal unit-middle unit-spacing-sm">
+                    <div class="unit-left">
+                      <img src=imgs/icon-location-32x33.png alt="" width="33" height="33">
+                    </div>
+                    <div class="unit-body">
+                      <address class="contact-info">
+                        <span class="text-bold text-gray-base reveal-block">267 Park Avenue</span>
+                        <span>New York, NY 90210</span>
+                      </address>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="unit unit-horizontal unit-middle unit-spacing-sm">
+                    <div class="unit-left">
+                      <img src=imgs/icon-phone-32x33.png alt="" width="33" height="32">
+                    </div>
+                    <div class="unit-body">
+                      <a class="text-gray-base text-bold reveal-block" href="callto:#">(123)&nbsp;45678910</a>
+                      <a href="mailto:info@stealthpay.com">info@stealthpay.com</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+-->
+            </div>
+          </div>
+        
+        <div class='topHorMenu '>
+<ul>
+<li   data-seccheck='1'  data-secusercheck='' >
+
+	             <a  href='https://www.stealthpay.com/aboutus' 
+					 >About Us</a>
+</li>
+<li   data-seccheck='1'  data-secusercheck='' >
+
+	             <a  href='https://www.stealthpay.com/buyxst' 
+					 >Buy Stealth</a>
+</li>
+<li   data-seccheck='1'  data-secusercheck='' >
+
+	             <a  href='https://www.stealthpay.com/sellxst' 
+					 >Sell Stealth</a>
+</li>
+<li   data-seccheck='1'  data-secusercheck='' >
+
+	             <a  href='https://www.stealthpay.com/sendmoney' 
+					 >Send Money</a>
+</li>
+<li   data-seccheck='1'  data-secusercheck='' >
+
+	             <a  href='https://www.stealthpay.com/requestmoney' 
+					 >Request Money</a>
+</li>
+<li   data-seccheck='1'  data-secusercheck='' >
+
+	             <a  href='https://www.stealthpay.com/Contact' 
+					 >Contact</a>
+</li>
+</ul>
+</div>
+
+        </div>
+      </nav>
+    </header>
+
+<div class="middleBody"><p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:16.0pt;line-height:115%;font-family:Sylfaen,serif" lang="EN-US"><br></span></b></p><p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:16.0pt;line-height:115%;font-family:Sylfaen,serif" lang="EN-US">About <b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal"><span style="font-size:16.0pt;line-height:
+115%;font-family:" sylfaen","serif";mso-fareast-font-family:calibri;mso-fareast-theme-font:="" minor-latin;mso-bidi-font-family:"times="" new="" roman";mso-bidi-theme-font:minor-bidi;="" color:black;mso-themecolor:text1;mso-ansi-language:en-us;mso-fareast-language:="" en-us;mso-bidi-language:ar-sa"=""><b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal"><span style="font-size:16.0pt;line-height:
+115%;font-family:" sylfaen","serif";mso-fareast-font-family:calibri;mso-fareast-theme-font:="" minor-latin;mso-bidi-font-family:"times="" new="" roman";mso-bidi-theme-font:minor-bidi;="" color:black;mso-themecolor:text1;mso-ansi-language:en-us;mso-fareast-language:="" en-us;mso-bidi-language:ar-sa"="">Stealth</span><span style="font-size:16.0pt;
+line-height:115%;color: #26a2d7;" sylfaen","serif";mso-fareast-font-family:calibri;="" mso-fareast-theme-font:minor-latin;mso-bidi-font-family:"times="" new="" roman";="" mso-bidi-theme-font:minor-bidi;color:#26a2d7;mso-ansi-language:en-us;="" mso-fareast-language:en-us;mso-bidi-language:ar-sa"="">Pay</span></i></b></span></i></b></span></b></p><p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:16.0pt;line-height:115%;font-family:Sylfaen,serif" lang="EN-US"><b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal"><span style="font-size:16.0pt;line-height:
+115%;font-family:" sylfaen","serif";mso-fareast-font-family:calibri;mso-fareast-theme-font:="" minor-latin;mso-bidi-font-family:"times="" new="" roman";mso-bidi-theme-font:minor-bidi;="" color:black;mso-themecolor:text1;mso-ansi-language:en-us;mso-fareast-language:="" en-us;mso-bidi-language:ar-sa"=""><b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal"><span style="font-size:16.0pt;
+line-height:115%;font-family:" sylfaen","serif";mso-fareast-font-family:calibri;="" mso-fareast-theme-font:minor-latin;mso-bidi-font-family:"times="" new="" roman";="" mso-bidi-theme-font:minor-bidi;color:#00b0f0;mso-ansi-language:en-us;="" mso-fareast-language:en-us;mso-bidi-language:ar-sa"=""><br></span></i></b></span></i></b></span></b></p><p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:16.0pt;line-height:115%;font-family:Sylfaen,serif" lang="EN-US"><b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal"><span style="font-size:16.0pt;line-height:
+115%;font-family:" sylfaen","serif";mso-fareast-font-family:calibri;mso-fareast-theme-font:="" minor-latin;mso-bidi-font-family:"times="" new="" roman";mso-bidi-theme-font:minor-bidi;="" color:black;mso-themecolor:text1;mso-ansi-language:en-us;mso-fareast-language:="" en-us;mso-bidi-language:ar-sa"=""><b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal"><span style="font-size:16.0pt;
+line-height:115%;font-family:" sylfaen","serif";mso-fareast-font-family:calibri;="" mso-fareast-theme-font:minor-latin;mso-bidi-font-family:"times="" new="" roman";="" mso-bidi-theme-font:minor-bidi;color:#00b0f0;mso-ansi-language:en-us;="" mso-fareast-language:en-us;mso-bidi-language:ar-sa"=""></span></i></b>
+
+
+</span><span style="font-size:16.0pt;
+line-height:115%;font-family:" sylfaen","serif";mso-fareast-font-family:calibri;="" mso-fareast-theme-font:minor-latin;mso-bidi-font-family:"times="" new="" roman";="" mso-bidi-theme-font:minor-bidi;color:#00b0f0;mso-ansi-language:en-us;="" mso-fareast-language:en-us;mso-bidi-language:ar-sa"=""></span></i></b>
+
+
+<i style="mso-bidi-font-style:normal"><span style="color:#0070C0">
+
+
+
+
+
+
+
+
+</span></i></span></b></p><p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:16.0pt;line-height:115%;font-family:Sylfaen,serif" lang="EN-US"><i style="mso-bidi-font-style:normal"><span style="color:#0070C0"> <b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal"><span style="font-size:16.0pt;line-height:
+115%;font-family:" sylfaen","serif";mso-fareast-font-family:calibri;mso-fareast-theme-font:="" minor-latin;mso-bidi-font-family:"times="" new="" roman";mso-bidi-theme-font:minor-bidi;="" color:black;mso-themecolor:text1;mso-ansi-language:en-us;mso-fareast-language:="" en-us;mso-bidi-language:ar-sa"=""></span><span style="font-size:16.0pt;
+line-height:115%;font-family:" sylfaen","serif";mso-fareast-font-family:calibri;="" mso-fareast-theme-font:minor-latin;mso-bidi-font-family:"times="" new="" roman";="" mso-bidi-theme-font:minor-bidi;color:#00b0f0;mso-ansi-language:en-us;="" mso-fareast-language:en-us;mso-bidi-language:ar-sa"=""></span></i></b>
+
+
+<b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal"><span style="font-size:16.0pt;line-height:
+115%;font-family:" sylfaen","serif";mso-fareast-font-family:calibri;mso-fareast-theme-font:="" minor-latin;mso-bidi-font-family:"times="" new="" roman";mso-bidi-theme-font:minor-bidi;="" color:#00b0f0;mso-ansi-language:en-us;mso-fareast-language:en-us;mso-bidi-language:="" ar-sa"=""></span></i></b>
+
+
+</span></i><span style="color:black;mso-themecolor:text1"><o:p></o:p></span></span></b></p><div align="justify"><b style="mso-bidi-font-weight:
+normal"><i style="mso-bidi-font-style:normal"><span style="font-size:14.0pt;line-height:115%;font-family:Sylfaen,serif;
+color:black;mso-themecolor:text1" lang="EN-US">Stealth</span></i></b><span style="color:black;font-size:14.0pt;line-height:115%;font-family:Sylfaen,serif" lang="EN-US"><b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal"><span style="color:#26a2d7">Pay</span></i></b></span><b style="mso-bidi-font-weight:normal"><span style="font-size:14.0pt;line-height:115%;font-family:Sylfaen,serif;
+color:black;mso-themecolor:text1" lang="EN-US"> </span></b><span style="font-size:14.0pt;line-height:115%;font-family:Sylfaen,serif;
+color:black;mso-themecolor:text1" lang="EN-US">is an online service which lets you move
+money anonymously anywhere across the globe. It is a gate to your financial
+privacy. <b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:
+normal">Stealth</i></b></span><b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal"><span style="font-size:14.0pt;
+line-height:115%;font-family:Sylfaen,serif;color:#26a2d7" lang="EN-US">Pay</span></i></b><span style="font-size:14.0pt;line-height:115%;font-family:Sylfaen,serif;
+color:black;mso-themecolor:text1" lang="EN-US"> is a place where people can buy and sell
+Stealth (XST) – anonymous digital currency. With its <b style="mso-bidi-font-weight:
+normal">Send Money</b> and <b style="mso-bidi-font-weight:normal">Request Money</b>
+functions<i style="mso-bidi-font-style:normal"> <b style="mso-bidi-font-weight:
+normal">Stealth</b></i></span><span style="color:black;font-size:14.0pt;line-height:115%;font-family:Sylfaen,serif" lang="EN-US"><b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal"><span style="color:#26a2d7">Pay</span></i></b></span><span style="font-size:14.0pt;line-height:115%;font-family:Sylfaen,serif;
+color:black;mso-themecolor:text1" lang="EN-US"> also allows you to pay anyone anonymously
+and to receive payments from anyone in an anonymous mode. <b style="mso-bidi-font-weight:
+normal"><span style="mso-spacerun:yes"></span></b></span><br><span style="font-size:14.0pt;line-height:115%;font-family:Sylfaen,serif;
+color:black;mso-themecolor:text1" lang="EN-US"><b style="mso-bidi-font-weight:
+normal"><span style="mso-spacerun:yes"></span></b></span></div>
+
+
+
+<span style="font-size:14.0pt;line-height:115%;font-family:Sylfaen,serif;
+color:black;mso-themecolor:text1" lang="EN-US"><b style="mso-bidi-font-weight:
+normal"><span style="mso-spacerun:yes">&nbsp;</span><span style="mso-spacerun:yes">&nbsp;</span></b></span><b style="mso-bidi-font-weight:
+normal"><span style="font-size:14.0pt;line-height:115%;font-family:
+Sylfaen,serif;color:black;mso-themecolor:text1;mso-ansi-language:" geo\="" kat""="" lang="EN-US"><span style="mso-spacerun:yes"> </span></span></b><b style="mso-bidi-font-weight:
+normal"><span style="font-size:14.0pt;line-height:115%;font-family:Sylfaen,serif;
+color:black;mso-themecolor:text1;mso-ansi-language:" geo\="" kat""=""><o:p></o:p></span></b>
+
+<p class="MsoNormal" style="text-align:justify"><span style="font-size:14.0pt;line-height:115%;font-family:Sylfaen,serif;
+color:black;mso-themecolor:text1" lang="EN-US">We are striving to render Stealth easily
+and quickly accessible for everyone in every part of the world. </span><span style="color:black;font-size:14.0pt;line-height:115%;font-family:Sylfaen,serif" lang="EN-US">Our
+customers can use a wide variety of payment methods to buy and sell Stealth
+and to transact in stealth mode with anyone, everywhere and anytime. With <b style="mso-bidi-font-weight:normal"><i style="mso-bidi-font-style:normal"><span style="color:black;mso-themecolor:text1">Stealth</span><span style="color:#26a2d7">Pay</span></i></b>
+you can spend Stealth anywhere VISA and MasterCard are accepted. <span style="color:black;mso-themecolor:text1"><o:p></o:p></span></span></p>
+
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:14.0pt;line-height:115%;font-family:Sylfaen,serif;
+color:black;mso-themecolor:text1" lang="EN-US"><o:p>&nbsp;</o:p></span></b></p></div>
+<section id="our-service" class="section section-lg " style="background:#efefef;">
+      <div class="shell">
+        <div class="range range-sm-center range-50">
+          <div class="cell-sm-5 cell-lg-3">
+            <div class="service text-center inset-lg-left-30 inset-lg-right-30">
+              <div class="icon-wrap">
+                <img src=imgs/anonymouse.jpg alt="" class="img-responsive" width="200" height="120">
+              </div>
+              <h4>
+                <a href="#send-money">Anonymous Payments</a>
+              </h4>
+              <p>Send and receive money in an anonymous mode</p>
+            </div>
+          </div>
+          <div class="cell-sm-5 cell-lg-3">
+            <div class="service text-center inset-lg-left-30 inset-lg-right-30">
+              <div class="icon-wrap">
+                <img src=imgs/wallet.jpg alt="" class="img-responsive" width="200" height="120">
+              </div>
+              <h4>
+                <a href="#recv-money">Private Wallet</a>
+              </h4>
+              <p>Store your money in a 100% private wallet.</p>
+              <p>Make instant private payments</p>
+             </div>
+          </div>
+          <div class="cell-sm-5 cell-lg-3">
+            <div class="service text-center inset-lg-left-30 inset-lg-right-30">
+              <div class="icon-wrap">
+                <img src=imgs/world.jpg alt="" class="img-responsive" width="200" height="120">
+              </div>
+              <h4>
+                <a href="#convertation">Global</a>
+              </h4>
+              <p>Move money around the globe anytime without any limits.</p>
+            </div>
+          </div>
+          <div class="cell-sm-5 cell-lg-3">
+            <div class="service text-center inset-lg-left-30 inset-lg-right-30">
+              <div class="icon-wrap">
+                <img src=imgs/providers.png alt="" class="img-responsive" width="200" height="120">
+              </div>
+              <h4>
+                <a href="#convertation">Various Payment Methods</a>
+              </h4>
+              <p>Dozens of international and local payment options to fund your wallet and move money worldwide.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+<section class="section section-md bg-alabaster">
+      <div class="shell text-center">
+        <div class="range range-30">
+          <div class="cell-xs-4 cell-sm-2-2 cell-lg-2">
+            <a href="#">
+              <img src=imgs/visa-mc.png alt="" class="link-image">
+            </a>
+          </div>
+          <div class="cell-xs-4 cell-sm-2-2 cell-lg-2">
+            <a href="#">
+              <img src=imgs/paypal.png alt="" class="link-image">
+            </a>
+          </div>
+          <div class="cell-xs-4 cell-sm-2-2 cell-lg-2">
+            <a href="#">
+              <img src=imgs/sepa.png alt="" class="link-image">
+            </a>
+          </div>
+          <div class="cell-xs-4 cell-sm-2-2 cell-lg-2">
+            <a href="#">
+              <img src=imgs/bank.png alt="" class="link-image">
+            </a>
+          </div>
+          <div class="cell-xs-4 cell-sm-2-2 cell-lg-2">
+            <a href="#">
+              <img src=imgs/western-union.png alt="" class="link-image">
+            </a>
+          </div>
+          <div class="cell-xs-4 cell-sm-2-2 cell-lg-2">
+            <a href="#">
+              <img src=imgs/moneygram.png alt="" class="link-image">
+            </a>
+          </div>
+
+
+        </div>
+
+      </div>
+        <br>
+        <p>Dozens of other payment options</p>
+    </section>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="js/js?id=UA-112870991-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag("js", new Date());
+
+  gtag("config", "UA-112870991-1");
+</script>
+
+<footer class="page-footer bg-ebony-clay ">
+      <div class="section section-md bg-bright-gray">
+        <div class="shell text-left">
+          <div class="range range-xs-center range-50">
+            <div class="cell-sm-6 cell-lg-3 text-center text-sm-left">
+              <div class="brand" style="white-space:nowrap;">
+                <h4 style="position:relative;top:0px;display:inline-block;vertical-align:top;">About </h4>
+                <a href="/" style="position:relative;top:-1px;display:inline-block;vertical-align:top;">
+                  <img class="img-responsive" src=imgs/logo-white.png alt="" style="height:30px;vertical-align:top;" height="30">
+                </a>
+<hr class="hr bg-shuttle-gray inset-lg-right-70">
+              </div>
+              <p><a href="/aboutus">Stealth<span style="color:#24a3d8">Pay</span> Info</a></p>
+              <p><a href="/announcements">Announcements</a></p>
+              <p><a href="/termsofuse">Terms of use</a></p>
+              <p><a href="/privacy">Privacy Policy</a></p>
+              <p><a href="/Business">Business</a></p>
+            </div>
+            <div class="cell-sm-6 cell-lg-3">
+              <h4>Help</h4>
+              <hr class="hr bg-shuttle-gray inset-lg-right-70">
+              <ul class="footer-navigation">
+                <li>
+                  <a href="/FAQ">FAQ</a>
+                </li>
+                <li>
+                  <a href="/orderstatus">Order status</a>
+                </li>
+                <li>
+                  <a href="/benefit">Benefit</a>
+                </li>
+                <li class="active">
+                  <a href="/contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div class="cell-sm-6 cell-lg-3">
+              <h4>Services</h4>
+              <hr class="hr bg-shuttle-gray inset-lg-right-70">
+              <ul class="footer-navigation">
+                <li>
+                  <a href="/stealthwallet">Stealth Wallet</a>
+                </li>
+                <li>
+                  <a href="/checkbalance">Check balance</a>
+                </li>
+                <li>
+                  <a href="/stealthnotify">Stealth notify</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="cell-sm-6 cell-lg-3">
+              <h4>Follow us</h4>
+              <hr class="hr bg-shuttle-gray inset-lg-right-70">
+              <address class="contact-info">
+                <ul class="list">
+                  <li>
+                    <div class="unit unit-horizontal unit-spacing-md">
+                      <div class="unit-left">
+                        <a href="https://www.facebook.com/StealthPay/" class="icon icon-xxs icon-circle icon-dark icon-white-filled fa-facebook"></a>
+                      </div>
+                      <div class="unit-body">
+                        <a href="https://www.facebook.com/StealthPay/">facebook</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="unit unit-horizontal unit-spacing-md">
+                      <div class="unit-left">
+                        <a href="https://twitter.com/StealthPay/" class="icon icon-xxs icon-circle icon-dark icon-white-filled fa-twitter"></a>
+                      </div>
+                      <div class="unit-body">
+                        <a href="https://twitter.com/StealthPay">Twitter</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="unit unit-horizontal unit-spacing-md">
+                      <div class="unit-left">
+                        <a href="http://t.me/StealthPay" class="icon icon-xxs icon-circle icon-dark icon-white-filled png-telegram"></a>
+                      </div>
+                      <div class="unit-body">
+                        <a href="http://t.me/StealthPay">Telegram</a>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="unit unit-horizontal unit-spacing-md">
+                      <div class="unit-left">
+                        <a href="https://www.reddit.com/r/StealthPay/" class="icon icon-xxs icon-circle icon-dark icon-white-filled png-reddit "></a>
+                      </div>
+                      <div class="unit-body">
+                        <a href="https://www.reddit.com/r/StealthPay/">Reddit</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="unit unit-horizontal unit-spacing-md">
+                      <div class="unit-left">
+                        <a href="https://www.youtube.com/channel/UCny2YYjMuRkdhR_1SqvfWoQ" class="icon icon-xxs icon-circle icon-dark icon-white-filled fa-youtube"></a>
+                      </div>
+                      <div class="unit-body">
+                        <span>Youtube</span>
+                      </div>
+                    </div>
+                  </li>
+
+
+                </ul>
+              </address>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="shell text-center rights">
+        <p>Copyright © 2024 StealthPay Ltd. All rights reserved. 
+        </p>
+      </div>
+    </footer>
+  </div>
+  <div id="form-output-global" class="snackbars"></div>
+<script src="js/core.min.js"></script>
+<script src="js/script.js"></script>
+</div><iframe id='frameforprinter'  name='frameforprinter' src='/print.htm' class='hidden' style='position:absolute;visibility:hidden;'></iframe>
+<script >
+var els=document.getElementsByClassName("productLikeButton");
+for(var i=0;i<els.length;i++)
+AddEventOnObject(els[i],"click",function(ev){
+  OpenWaitingEx();
+  var e=ev || window.event;
+  var obj=e.srcElement || e.target;
+  var pid=obj.getAttribute("data-productId");
+  getRequest("","?phpParam=elements&evc=LikeProduct&id="+pid, function(vdat){
+              console.log(vdat);
+              CloseWaitingEx();
+    
+           });
+});
+
+</script>
+
+
+</body></html>
